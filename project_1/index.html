@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>About Jorge Cano</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/main.css">
@@ -17,39 +18,39 @@
     <div class="container">
       <div class="row">
         <div class="col-md-3">
-          <!-- logo to be moved to the left, text for now -->
-          <h1>Day in the Life of Jorge</h1>
-        <!-- edit the navigation here -->
+          <!-- logo to be moved to the left -->
+          <p>Day in the Life</p>
+          <!--edit the navigation here-->
         </div>
         <div class="col-md-9">
           <nav class="menu">
             <ul class="inner">
-              <li>|||</li>
-              <li>about me</li>
-              <li>experience</li>
-              <li>contact</li>
+              <!-- <li>|||</li> to be potent added as a drop down burger menu for mobile -->
+              <li><a href="#linktoabout">about me</a></li>
+              <li><a href="#linktoexperience">experience</a></li>
+              <li><a href="#linktocontact">contact</a></li>
             </ul>
           </nav>
         </div>
-    </div>
+      </div>
     </div>
   </header>
 
 <section class="intro">
     <div class="row">
       <div class="col-md-12">
-        <div id="name">
-          <h2>Jorge Cano</h2>
-        </div>
+          <h1 id="messageLabel">Hello World! I'm Jorge Cano</h1>
         <p>"Web Developer in the Pursuit of Knowledge"<br></p>
       </div>
     </div>
 </section>
 
+
 <div class="container2">
   <div class="row">
     <div class="col-md-4 text">
       <div id="aboutMe">
+        <a name="linktoabout"></a>
         <h2>About Me</h2>
         <p>Texas Native learning the fundamentals to web
         development. Family, Community and Education are at the core of who I am.
@@ -57,8 +58,10 @@
         community.</p>
       </div>
     </div>
+
     <div class="col-md-4 text">
       <div id="experience">
+          <a name="linktoexperience"></a>
           <h2>Experience</h2>
         <p>As a former data analyst, I will utilize pattern recognition & analytics to render user insight for business applications. I've also run the gamut in terms of building
         marketing startups from a sales, customer service and account management capacity.</p>
@@ -67,8 +70,9 @@
     <div>
     <div class="col-md-4 text">
       <div id="contactme">
+        <a name="linktocontact"></a>
         <h2>Contact Me</h2>
-        <p>Monday-Saturday 8am-5pm CST <br>Email : jacinaustin@gmail.com<br>Phone: 512-XXX-XXXX<br> https://github.com/Jorge-Cano</p>
+        <p>Monday-Saturday 8am-5pm CST <br>Email : jacinaustin@gmail.com<br>Phone: (512)-831-2857<br> github.com/Jorge-Cano <br> linkedin.com/in/jorgeacano/</p>
       </div>
     </div>
   </div>
@@ -79,13 +83,22 @@
     <div class="row">
       <div class="col-md-12">
         <h2>Projects</h2>
-        <p>Dive into the Projects</p>
+        <button onclick="myFunction()">Dive in</button>
+            <div id="myDIV"> <!--inline ** style="display: hidden" not working -->
+              <ol>
+                <li>"Parallax using Scroller"</li>
+                <li>"Calculator-JS"</li>
+                <li>"CRUD Artist-Songs DB"</li>
+              </ol>
+            </div>
       </div>
     </div>
   </section>
+
   <footer>
     <p>made with mxm eng</p>
   </footer>
+  <script src="js/main.js" charset="utf-8"></script>
 
 </body>
 </html>
