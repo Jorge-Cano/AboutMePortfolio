@@ -1,6 +1,7 @@
 html, body, footer{
   font-size: 18px;
   font-family: 'Montserrat', sans-serif;
+  overflow: auto;
 }
 
 /* Message Label Banner intro to Jorge */
@@ -37,13 +38,13 @@ header p{
   margin-left: 20px;
 }
 #experience p{
-  text-align: left;
+  text-align: center;
 }
 #aboutMe p{
-  text-align: left;
+  text-align: center;
 }
 #contactme p{
-  text-align: left;
+  text-align: center;
 }
 h1 {
   font-size:18px;
@@ -51,10 +52,15 @@ h1 {
 h2 {
   font-size: 32px;
   font-weight: bold;
+  text-align: center;
 }
+#contactme h2 {
+  text-align:center;
+}
+
 #name h2{
   font-size: 64px;
-  text-align: center;
+  text-align: left;
 }
 li {
   float: left;
@@ -114,11 +120,9 @@ button:hover{
   text-align: left;
   display: inline-block;
   padding: 25px 30px 0px 30px;
-  overflow: auto;
 }
 #myDIV li{
   padding: 0px 75px 0px 75px;
-  overflow: auto;
 }
 
 /* Use media query below, for anything above
@@ -132,6 +136,7 @@ footer p{
   text-align: center;
   padding: 40px 20px;
   margin: auto;
+  max-height:100%;
 }
 
 
