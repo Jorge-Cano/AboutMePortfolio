@@ -1,5 +1,8 @@
 $(document).ready(function(){
    $('#myDIV').hide();
+   $('.carousel').carousel({
+      interval: 4500
+    })
 });
 
 
@@ -18,30 +21,14 @@ function textFunc() {
       clearInterval(timer1);
 
       // Start blinking animation!
-      timer2 = setInterval("blinkFunc()", 200);
+    //  timer2 = setInterval("blinkFunc()", 200);//
 
    } else {
       msgCount++;
    }
 }
 
-// function blinkFunc() {
 
-//    // Blink 5 times
-//    if (blinkCount < 4) {
-//       if(blinkFlg == 0) {
-//          messageLabel.innerHTML = message;
-//          blinkFlg = 1;
-//          blinkCount++;
-//       } else {
-//          messageLabel.innerHTML = "";
-//          blinkFlg = 0;
-//       }
-//    } else {
-//       // Stop Timer
-//       clearInterval(timer2);
-//    }
-// }
 
 timer1 = setInterval("textFunc()", 150); // Every 150 milliseconds
 
@@ -55,4 +42,3 @@ function myFunction() {
         x.style.display = 'none';
     }
 }
-

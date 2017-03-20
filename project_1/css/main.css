@@ -81,7 +81,7 @@ p{
 ul{
   margin: 15px;
 }
-.menu{
+.menu {
   float:right;
   padding-right: 9px;
 }
@@ -125,6 +125,27 @@ button:hover{
   padding: 0px 75px 0px 75px;
 }
 
+.background {
+  width:100%;
+  height:350px;
+  background-color:red;
+}
+
+.background.slide1 {
+  /*replace with whatever*/
+  background:url('https://image.freepik.com/free-vector/decorative-geometric-colorful-abstract-background-vector-set_293-914.jpg');
+}
+
+.background.slide2 {
+  background: rgba(180,44,80,.5);
+  /*background:url('http://www.rgbstock.com/cache1wqcg2/users/x/xy/xymonau/300/oyWxHOm.jpg');
+*/
+}
+
+.background.slide3 {
+  background:url('http://images.thinkdrawart.com/wp-content/uploads/2012/04/Fantasy-Sky-Step1.jpg');
+}
+
 /* Use media query below, for anything above
 1024px or 768px hide the burger, and show everything else
 
@@ -138,6 +159,5 @@ footer p{
   margin: auto;
   max-height:100%;
 }
-
 
 
